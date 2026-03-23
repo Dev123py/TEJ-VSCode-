@@ -1,0 +1,14 @@
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 0;
+	color: #555753; 
+	background: #fff url(background1.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+h1 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #3b3a32;
+	}
