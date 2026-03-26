@@ -1,0 +1,26 @@
+
+.header{
+
+    height: 30px;
+    width: 800px;
+    background-color: darkslategray;
+    text-align: center;
+
+}
+
+.firstPlace{
+
+}
+
+p1{
+
+    position: relative;
+    bottom: 200px;
+    right: 400px;
+}
+
+img{
+
+    float: right;
+
+}
