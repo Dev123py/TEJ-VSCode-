@@ -1,0 +1,17 @@
+body{
+background-image:linear-gradient(to bottom, rgb(42, 42, 153), rgb(23, 84, 124));
+background-repeat: no-repeat;
+background-size: auto;
+min-height: 100vh;
+opacity: 0.8;
+}
+
+h1{
+text-align: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.cookie-img-button:active img {
+  transform: scale(0.95);
+}
