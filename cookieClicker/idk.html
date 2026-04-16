@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <link rel="stylesheet" href="idkbre.css">
-    </header>
-    <body>
-        <main>
-            <h1>
-                Cookie Clicker!
-            </h1>
-            <button onclick="cookie()" class="cookie-img-button">
-                <img src="idkcookie.png">
-            </button>
+<head>
+    <link rel="stylesheet" href="idkbre.css">
+</head>
+<body>
+    <div class="game-container">
 
-            <p>cookie score: <span id="cookieClickNum">0</span></p>
+        <div class="cookie-side">
 
-        </main>
-        <script src="idkbru.js"></script>
-    </body>
+            <h1>Cookie Clicker!</h1>
+
+            <p>Cookies: <span id="cookieCount">0</span></p>
+
+            <img src="idkcookie.png" class="cookie-pic" onclick="handleCookieClick()">
+
+            <img src="idkvillager.png" id="villager" onclick="buyVillager()">
+
+        </div>
+
+        <div class="shop-side">
+
+            <h2>Boosts</h2>
+
+            <div class="item">
+
+                <p>Multiplier (Lv: <span id="multLevel">0</span>)</p>
+
+                <button onclick="buyUpgrade('multiplier')">Buy: <span id="multCost">10</span></button>
+
+            </div>
+            <div class="item">
+
+                <p>Auto-Click (Lv: <span id="autoLevel">0</span>)</p>
+
+                <button onclick="buyUpgrade('autoclick')">Buy: <span id="autoCost">15</span></button>
+
+            </div>
+        </div>
+    </div>
+    <script src="idkbru.js"></script>
+</body>
 </html>
