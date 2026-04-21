@@ -1,0 +1,21 @@
+int ledPin = 3;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+  delay(100);
+}
+
+void loop() {
+  int number = 0;
+  while (Serial.available() == 0);
+    number = Serial.parseInt();
+    Serial.println(number);
+
+  if (number==0){
+    digitalWrite(ledPin, LOW);
+  }
+  if (number==1){
+    digitalWrite(ledPin, HIGH);
+  }
+}
