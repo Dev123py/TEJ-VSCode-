@@ -36,9 +36,9 @@ console.log('Serial Port ' + arduinoCOMPort + ' is opened.');
 // middleware to load static files
 const path = require('path');
 app.use(express.static(__dirname + '/public'));
-app.get('/', function (req, res) {
-res.sendFile(path.join(__dirname, '/index.htm'));
-})
+//app.get('/', function (req, res) {
+//res.sendFile(path.join(__dirname, '/index.htm'));
+//})
 
 
 // Ensure you have this line near the top of your file to read form data:
@@ -58,7 +58,7 @@ arduinoPort.write(dataToSend, function(err) {
         return res.status(500).send('Error writing to Serial Port');
     }
     console.log('Sent to Arduino: ' + dataToSend);
-    res.send('Names sent! LCD updated with: ' + firstName + ' ' + lastName);
+    res.send('LLLLLLL get scammed nerd!');
 });
 });
 

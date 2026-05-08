@@ -1,0 +1,40 @@
+
+body {
+    background-image: url('/bgimage5.png');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    border: #0071e3;
+}
+
+.login-container {
+    background-color: rgba(48, 48, 48, 0.8); 
+    padding: 30px;
+    border-radius: 20px; 
+    width: 320px;
+    text-align: center;
+    color: white;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    background-color: #0071e3;
+    color: white;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-weight: bold;
+}
